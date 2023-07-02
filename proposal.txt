@@ -1,0 +1,22 @@
+Group Project Proposal – Initial Draft
+
+Team Information
+	
+Adam Larson
+•	al762@nau.edu
+•	GitHub: adlarson88
+Corey Moreno
+•	cjm758@nau.edu
+•	Github: CoreyjMoreno
+
+Project Idea and Requirements
+
+The idea for our project is a retail style craigslist (or private amazon marketplace) website targeting individuals who would like to sell their things without the hassle of negotiation. This would include information such as the image, description, and price of the item being sold. The consumer would visit the website, browse through products, add the desired items to their cart, and checkout. Additional purchase information would be given, as well as shipping and other related information, however this is out of the scope of the project and will not be included. 
+
+Planning
+
+The website will feature a React based interface through the web browser and will be composed of four primary components: header, content, sidebar (right), and footer. The header will be to display the website name as well as a very basic navigation menu. Content will show images and prices of items posted. This will be updated dynamically as an item is clicked on for more details or by using the navigation menu. The sidebar will be located on the right side and be used as the ‘cart’ for items desired to be purchased. The footer will contain additional information typically seen on commercial websites (to a much lesser extent) with redirects away from the shopping themed site.
+
+Backend operations will be handled by NodeJS with a MongoDB (expected – MySQL is the alternative) database to store information. The REST API created with node will have endpoints available to receive HTTP requests with proper parameters to retrieve the information desired. Examples of this in the initial state include POST requests for listing an item, GET requests for getting the listings information, and PUT requests for updating item information or availability. DELETE requests may also be used to remove items from inventory, however items may be made unavailable instead with this status not retrieved when performing GET requests. The database will simply store all the item information and be acted upon by the API, with the website tracking cart status and only making requests to display or update information.
+
+This is a preliminary structure of basic websites and may change as requirements or more information is made available as the semester progresses.
